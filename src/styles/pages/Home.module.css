@@ -1,0 +1,239 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1440px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+  width: 100%;
+  padding: 2rem;
+}
+
+.header_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar_container {
+  width: 25px;
+  height: 25px;
+}
+
+.cart_button, .menu_button {
+  font-size: none;
+  display: flex;
+  margin-right: 1rem;
+  position: relative;
+}
+
+.cart_items_quantity {
+  position: absolute;
+  top: -10px;
+  right: -8px;
+  padding: 0 0.5rem;
+  font-size: 1.3rem;
+  color: var(--white);
+  background-color: var(--orange);
+  border-radius: 0.6rem;
+  border: 2px solid var(--white);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+}
+
+.main_section:last-of-type {
+  padding: 2rem;
+}
+
+.section_sneaker_company {
+  color: var(--orange);
+  width: 100%;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.section_heading {
+  line-height: 1.2;
+  width: 100%;
+}
+
+.section_description {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.section_pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+}
+
+.section_pricing span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing_price {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.pricing_discount {
+  background-color: var(--pale-orange);
+  border-radius: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  color: var(--orange);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-left: 1rem;
+}
+
+.pricing_old_price {
+  flex-grow: 1;
+  text-align: right;
+  font-weight: 700;
+  color: var(--grayish-blue);
+  text-decoration: line-through;
+}
+
+.quantity_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.quantity_input__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  background-color: var(--light-grayish-blue);
+  margin: 2rem 0;
+}
+
+.quantity_input__container button {
+  padding: 0.5rem;
+  font-size: 0;
+}
+
+.quantity_input__container input {
+  border: none;
+  background-color: var(--light-grayish-blue);
+  font-weight: 700;
+  text-align: center;
+}
+
+.buy_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--orange);
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  width: 100%;
+}
+
+.buy_button * {
+  color: var(--white);
+}
+
+.buy_button p {
+  font-weight: 700;
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 3rem 1rem;
+    border-bottom: 1px solid var(--grayish-blue);
+  }
+
+  .header_div {
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 150px;
+    height: 32px;
+  }
+
+  .avatar_container {
+    width: 50px;
+    height: 50px;
+    margin-left: 2rem;
+  }
+
+  .menu_button {
+    display: none;
+  }
+
+  .main {
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    padding: 4rem 1rem;
+  }
+
+  .section_sneaker_company {
+    font-size: 1.6rem;
+    margin: 2rem 0;
+  }
+
+  .section_heading {
+    font-size: 4.8rem;
+  }
+
+  .section_description {
+    font-size: 1.7rem;
+  }
+
+  .section_pricing {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .quantity_container {
+    flex-direction: row;
+  }
+
+  .quantity_input__container {
+    max-width: 200px;
+    margin-right: 1rem;
+  }
+}
