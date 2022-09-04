@@ -1,34 +1,81 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<a name="readme-top"></a>
+
+<div align="center">
+  <h1 align="center">Ecommerce Product Page</h1>
+
+  <p align="center">
+    This is a Front-end Mentor project, is a Ecommerce Product Page make with Next.js + Typescript
+    <br />
+    <a href="https://product-page-five.vercel.app/">View Demo</a>
+    ·
+    <a href="https://github.com/jjuliomarttins/product-page/issues">Request Feature</a>
+    ·
+    <a href="https://www.frontendmentor.io/home">Front-End Mentor</a>
+  </p>
+</div>
+
+<ul>
+  <li>
+    <a href="#preview">Preview</a>
+  <li>
+    <a href="#technologies">Technologies</a>
+  </li>
+  </li>
+  <li>
+    <a href="#getting-started">Getting Started</a>
+    <ul>
+      <li><a href="#prerequisites">Prerequisites</a></li>
+      <li><a href="#installation">Installation</a></li>
+    </ul>
+  </li>
+  <li><a href="#license">License</a></li>
+  <li><a href="#author">Author</a></li>
+</ul>
+
+## Preview
+
+<img src="./.github/images/readme-preview.gif" alt="Project Preview Gif" />
+
+<br />
+
+## Technologies
+
+- **[Next.js](https://nextjs.org/)**
+- **[TypeScript](https://www.typescriptlang.org/)**
+- **[SVGR](https://react-svgr.com/docs/getting-started)**
+- **[CSS Modules](https://github.com/css-modules/css-modules)**
+
+<br />
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- **[Node.js](https://nodejs.org/en/)**
+- **[vscode](https://code.visualstudio.com/)**
+
+### Installation
+
+Clone the repository in your computer
 
 ```bash
-npm run dev
-# or
-yarn dev
+  git clone https://github.com/jjuliomarttins/product-page
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install all dependencies with `npm install` or `yarn` and run the project with `npm run dev` or `yarn dev`.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## License
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Author
 
-## Learn More
+<img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/49854105?v=4" width="100px;" alt=""/>
+<br />
+<sub><b>Julio Martins</b></sub></a>
 
-To learn more about Next.js, take a look at the following resources:
+Make by Julio Martins 👋🏽 Contact me!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[![Linkedin Badge](https://img.shields.io/badge/-@jjuliomarttins-1262BF?style=for-the-badge&labelColor=1262BF&logo=linkedin&logoColor=white&link=https://twitter.com/jjuliomarttins)](https://www.linkedin.com/in/jjuliomarttins/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

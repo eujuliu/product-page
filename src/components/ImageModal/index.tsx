@@ -1,13 +1,14 @@
 import type { NextPage } from "next";
+import { Dispatch, SetStateAction } from "react";
 import Image from "next/image";
 
 import CloseIcon from "@/assets/images/icon-close.svg";
 import NextIcon from "@/assets/images/icon-next.svg";
 import PreviousIcon from "@/assets/images/icon-previous.svg";
 
-import styles from "./styles.module.css";
-import { Dispatch, SetStateAction } from "react";
 import { useSwitchImage } from "@/hooks/useSwitchImage";
+
+import styles from "./styles.module.css";
 
 interface ImageModalProps {
   imageModalIsVisible: boolean;

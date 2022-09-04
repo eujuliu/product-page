@@ -1,11 +1,12 @@
 import type { NextPage } from "next";
-import Link from "next/link";
 import { Dispatch, SetStateAction } from "react";
+import Link from "next/link";
 
 import CloseIcon from "@/assets/images/icon-close.svg";
 
-import styles from "./styles.module.css";
 import { useGetWindowWidth } from "@/hooks/useGetWindowWidth";
+
+import styles from "./styles.module.css";
 
 interface NavigationBarProps {
   menuIsVisible: boolean;

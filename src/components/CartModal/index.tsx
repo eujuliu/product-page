@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
-import Image from "next/image";
 import { Dispatch, SetStateAction, useEffect } from "react";
+import Image from "next/image";
 
 import DeleteIcon from "@/assets/images/icon-delete.svg";
 
