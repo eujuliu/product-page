@@ -68,6 +68,7 @@ const CartModal: NextPage<CartModalProps> = ({
                   </p>
                 </div>
                 <button
+                  aria-label="Delete"
                   onClick={() => {
                     setCartProducts(() =>
                       cartProducts.map((obj) => {
@@ -84,7 +85,10 @@ const CartModal: NextPage<CartModalProps> = ({
         )}
 
         {cartProducts.length > 0 ? (
-          <button className={styles.cart_modal__checkout_button}>
+          <button
+            aria-label="Checkout"
+            className={styles.cart_modal__checkout_button}
+          >
             Checkout
           </button>
         ) : null}

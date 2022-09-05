@@ -28,7 +28,10 @@ const NavigationBar: NextPage<NavigationBarProps> = ({
       }
     >
       <div className={styles.navigation_container}>
-        <button onClick={() => setMenuVisibility(!menuIsVisible)}>
+        <button
+          aria-label="Close"
+          onClick={() => setMenuVisibility(!menuIsVisible)}
+        >
           <CloseIcon />
         </button>
         <ul>

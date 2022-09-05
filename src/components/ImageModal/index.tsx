@@ -29,7 +29,10 @@ const ImageModal: NextPage<ImageModalProps> = ({
     >
       <div className={styles.image_modal_container}>
         <div className={styles.image_modal_button_container}>
-          <button onClick={() => setImageModalVisibility(!imageModalIsVisible)}>
+          <button
+            aria-label="Close"
+            onClick={() => setImageModalVisibility(!imageModalIsVisible)}
+          >
             <CloseIcon fontSize={25} fill="#fff" />
           </button>
         </div>
@@ -37,6 +40,7 @@ const ImageModal: NextPage<ImageModalProps> = ({
           {returnSpecificImage(imageNumber)}
 
           <button
+            aria-label="Previous"
             className={styles.image_previous__button}
             onClick={() =>
               setImageNumber(Math.max(1, Math.min(4, imageNumber - 1)))
@@ -46,6 +50,7 @@ const ImageModal: NextPage<ImageModalProps> = ({
           </button>
 
           <button
+            aria-label="Next"
             className={styles.image_next__button}
             onClick={() =>
               setImageNumber(Math.max(1, Math.min(4, imageNumber + 1)))
@@ -57,6 +62,7 @@ const ImageModal: NextPage<ImageModalProps> = ({
 
         <div className={styles.image_thumbnail_container}>
           <button
+            aria-label="Product thumbnail 1"
             className={
               imageNumber === 1
                 ? styles.image_thumbnail_button_selected
@@ -72,6 +78,7 @@ const ImageModal: NextPage<ImageModalProps> = ({
             />
           </button>
           <button
+            aria-label="Product thumbnail 2"
             className={
               imageNumber === 2
                 ? styles.image_thumbnail_button_selected
@@ -87,6 +94,7 @@ const ImageModal: NextPage<ImageModalProps> = ({
             />
           </button>
           <button
+            aria-label="Product thumbnail 3"
             className={
               imageNumber === 3
                 ? styles.image_thumbnail_button_selected
@@ -102,6 +110,7 @@ const ImageModal: NextPage<ImageModalProps> = ({
             />
           </button>
           <button
+            aria-label="Product thumbnail 4"
             className={
               imageNumber === 4
                 ? styles.image_thumbnail_button_selected

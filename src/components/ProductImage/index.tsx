@@ -29,11 +29,15 @@ const ProductImage: NextPage<ProductImageProps> = ({
         {windowWidth < 1024 ? (
           returnSpecificImage(imageNumber)
         ) : (
-          <button onClick={() => setImageModalVisibility(!imageModalIsVisible)}>
+          <button
+            aria-label="Image"
+            onClick={() => setImageModalVisibility(!imageModalIsVisible)}
+          >
             {returnSpecificImage(imageNumber)}
           </button>
         )}
         <button
+          aria-label="Previous"
           className={styles.image_previous__button}
           onClick={() =>
             setImageNumber(Math.max(1, Math.min(4, imageNumber - 1)))
@@ -43,6 +47,7 @@ const ProductImage: NextPage<ProductImageProps> = ({
         </button>
 
         <button
+          aria-label="Next"
           className={styles.image_next__button}
           onClick={() =>
             setImageNumber(Math.max(1, Math.min(4, imageNumber + 1)))
@@ -54,6 +59,7 @@ const ProductImage: NextPage<ProductImageProps> = ({
 
       <div className={styles.image_thumbnail_container}>
         <button
+          aria-label="Image thumbnail 1"
           className={
             imageNumber === 1
               ? styles.image_thumbnail_button_selected
@@ -69,6 +75,7 @@ const ProductImage: NextPage<ProductImageProps> = ({
           />
         </button>
         <button
+          aria-label="Image thumbnail 2"
           className={
             imageNumber === 2
               ? styles.image_thumbnail_button_selected
@@ -84,6 +91,7 @@ const ProductImage: NextPage<ProductImageProps> = ({
           />
         </button>
         <button
+          aria-label="Image thumbnail 3"
           className={
             imageNumber === 3
               ? styles.image_thumbnail_button_selected
@@ -99,6 +107,7 @@ const ProductImage: NextPage<ProductImageProps> = ({
           />
         </button>
         <button
+          aria-label="Image thumbnail 4"
           className={
             imageNumber === 4
               ? styles.image_thumbnail_button_selected

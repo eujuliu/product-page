@@ -38,6 +38,7 @@ const Home: NextPage = () => {
       <header className={styles.header}>
         <div className={styles.header_div}>
           <button
+            aria-label="Menu"
             className={styles.menu_button}
             onClick={() => {
               cartModalIsVisible ? setCartVisibility(false) : null;
@@ -61,6 +62,7 @@ const Home: NextPage = () => {
         </div>
         <div className={styles.header_div}>
           <button
+            aria-label="Cart"
             className={styles.cart_button}
             onClick={() => setCartVisibility(!cartModalIsVisible)}
           >
@@ -125,6 +127,7 @@ const Home: NextPage = () => {
           <div className={styles.quantity_container}>
             <div className={styles.quantity_input__container}>
               <button
+                aria-label="Minus"
                 onClick={() =>
                   setInputValue(Math.max(1, Math.min(100, inputValue - 1)))
                 }
@@ -139,6 +142,7 @@ const Home: NextPage = () => {
                 onChange={(e) => setInputValue(Number(e.target.value))}
               />
               <button
+                aria-label="Plus"
                 onClick={() =>
                   setInputValue(Math.max(1, Math.min(100, inputValue + 1)))
                 }
@@ -147,6 +151,7 @@ const Home: NextPage = () => {
               </button>
             </div>
             <button
+              aria-label="Add to cart"
               className={styles.buy_button}
               onClick={() => {
                 if (cartProducts.length === 0) {
