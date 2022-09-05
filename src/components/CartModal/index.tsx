@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Dispatch, SetStateAction, useEffect } from "react";
+import { Dispatch, SetStateAction } from "react";
 import Image from "next/image";
 
 import DeleteIcon from "@/assets/images/icon-delete.svg";
@@ -33,14 +33,6 @@ const CartModal: NextPage<CartModalProps> = ({
   cartProducts,
   setCartProducts,
 }) => {
-  useEffect(() => {
-    let filtered = cartProducts.filter((obj) => {
-      return obj.quantity > 0;
-    });
-
-    setCartProducts(filtered);
-  });
-
   return (
     <div
       className={
@@ -72,6 +64,14 @@ const CartModal: NextPage<CartModalProps> = ({
                   onClick={() => {
                     setCartProducts(() =>
                       cartProducts.map((obj) => {
+                        if (obj.quantity < 2) {
+                          let filtered = cartProducts.filter((obj) => {
+                            return obj.quantity !== 1;
+                          });
+
+                          setCartProducts(filtered);
+                        }
+
                         return { ...obj, quantity: obj.quantity - 1 };
                       })
                     );
