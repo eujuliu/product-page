@@ -134,13 +134,7 @@ const Home: NextPage = () => {
               >
                 <MinusIcon fontSize={12} />
               </button>
-              <input
-                type="number"
-                min={0}
-                max={100}
-                value={inputValue}
-                onChange={(e) => setInputValue(Number(e.target.value))}
-              />
+              <p>{inputValue}</p>
               <button
                 aria-label="Plus"
                 onClick={() =>

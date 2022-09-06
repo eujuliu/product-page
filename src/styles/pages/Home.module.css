@@ -150,11 +150,8 @@
   font-size: 0;
 }
 
-.quantity_input__container input {
-  border: none;
-  background-color: var(--light-grayish-blue);
+.quantity_input__container p {
   font-weight: 700;
-  text-align: center;
 }
 
 .buy_button {
